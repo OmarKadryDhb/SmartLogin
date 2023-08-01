@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <div class="container w-50 d-flex justify-content-center align-items-center mt-5 p-3 shadow-lg">
+    <div class="ineer w-100 text-center" id="uppage">
+        <h1>Smart Login System</h1>
+        <input type="text" id="signName" class="form-control w-100 my-3 " placeholder="Enter Your Name">
+        <small id="signNameError" class="text-danger d-none">Invalid Name</small>
+        <input type="email" id="signEmail" class="form-control w-100 my-3 " placeholder="Enter Your Email">
+        <small id="signEmailError" class="text-danger d-none">Invalid Email</small>
+        <input type="password" id="signPass" class="form-control w-100 my-3" placeholder="Enter Your Password">
+        <small id="signPassError" class="text-danger d-none">Invalid pass</small>
+        <small id="inputError" class="text-danger d-none">Please Fill the Data!</small>
+        <h4 class=" text-bg-success" id="Success"></h4>
+        <button  class="btn text-center border-info w-100 my-2" id="signUp">Sign Up</button>
+        <span class="text-white">You have an account? <a href="index.html" class="text-white" id="in">Sign in</a></span>
+    </div>
+    </div>
+
+    <script src="./js/up.js"></script>
+</body>
+</html>

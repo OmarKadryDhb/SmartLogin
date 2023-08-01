@@ -1,0 +1,43 @@
+:root{
+    --main-font: 'Titillium Web', sans-serif;
+    --main-color: #012b31;
+    --second-color: #17A2B8;
+}
+body{
+    background-color:var(--main-color);
+}
+.container{
+    background-color: var(--main-color);
+
+}
+.container .ineer h1{
+    color:var(--second-color);
+    font-family: var(--main-font);
+}
+.container .ineer input{
+    background-color:var(--main-color);
+    color: antiquewhite;
+    
+}
+.container .ineer input::placeholder{
+    color: antiquewhite;
+    
+}
+
+.container button {
+    transition: all 0.2s;
+    color: var(--second-color);
+}
+.container button:hover {
+    background-color: var(--second-color);
+    color: white;
+}
+.navbar button{
+    border:1px solid yellow;
+    transition: all 0.5s;
+    color: white;
+}
+.navbar button:hover{
+    background-color: yellow;
+    color: black;
+}
