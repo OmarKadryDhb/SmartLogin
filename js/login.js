@@ -21,7 +21,6 @@ if (localStorage.getItem('signinList')) {
     for (let i = 0; i < signinList.length; i++) {
     if (logEmail.value==signinList[i].email && logPass.value==signinList[i].pass) {
         open('home.html',"_self")
-        // document.getElementById("we").innerHTML="WELCOME"+signinList[i].name;
     }else{
       logError.classList.replace('d-none','d-block');
     } 

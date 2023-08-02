@@ -19,12 +19,7 @@ signUp.addEventListener("click", function () {
   if (signEmail.value == "" || signPass.value == "" || signName.value == "") {
     inputError.classList.replace("d-none", "d-block");
     document.getElementById("Success").innerHTML = "";
-  } else if (
-    nameValidation() &&
-    emailValidation() &&
-    passValidation() &&
-    duplicated()
-  ) {
+  } else if ( nameValidation() && emailValidation() && passValidation() && duplicated() ) {
     var data = {
       name: signName.value,
       email: signEmail.value,
@@ -34,9 +29,9 @@ signUp.addEventListener("click", function () {
     document.getElementById("Success").innerHTML = "Success!";
 
     signinList.push(data);
-    // open("index.html","_self")
+    open("index.html","_self")
     localStorage.setItem("signinList", JSON.stringify(signinList));
-    // clear();
+    clear();
   }
 });
 //duplicated
